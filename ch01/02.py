@@ -1,6 +1,6 @@
 str1="パトカー"
 str2="タクシー"
 word=""
-for i in range(len(str1)):
-    word+=str1[i]+str2[i]
+for a,b in zip(str1,str2):
+    word+=a+b
 print(word)
