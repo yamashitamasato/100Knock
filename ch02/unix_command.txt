@@ -1,0 +1,21 @@
+10
+$wc -l hightemp.txt
+11
+# cat hightemp.txt | tr '\t' ' '
+12
+# cut -f 1 hightemp.txt
+# cut -f 2 hightemp.txt
+13
+# paste col1.txt col2.txt
+14
+# head -n2 hightemp.txt
+15
+# tail -n3 hightemp.txt
+16
+# split -l 8 hightemp.txt
+17
+# cut -f 1 hightemp.txt |sort|uniq
+18
+# sort -r -k 3 hightemp.txt
+19
+# cut -f 1 hightemp.txt | sort | uniq -c | sort -r 
