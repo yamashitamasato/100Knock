@@ -3,7 +3,11 @@ def ngram(text,n,mode):
     if(mode=='char'):
         words=text.split(' ')
         for i in range(len(words)-n+1):
-            result.append([words[i],words[i+1]])
+            wordlist=[]
+            for j in range(0,n):
+                wordlist.append(words[i+j])
+            result.append(wordlist[0:n])
+
     elif(mode=='word'):
         word=text.replace(" ","")
         if(len(word)>n):
